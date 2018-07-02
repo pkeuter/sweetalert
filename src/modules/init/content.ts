@@ -51,7 +51,6 @@ const initPredefinedContent = (content: Node, elName: string, attrs: any): void 
   // Set things like "placeholder":
   for (let key in attrs) {
     let value: string = attrs[key];
-
     (<any>el)[key] = value;
   }
 
