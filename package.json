@@ -5,11 +5,11 @@
   "main": "dist/sweetalert.min.js",
   "types": "typings/sweetalert.d.ts",
   "scripts": {
-    "build": "node_modules/.bin/webpack -p",
+    "build": "webpack -p",
     "buildtest": "npm run build && jest",
-    "test": "node_modules/.bin/jest",
-    "builddocs": "node_modules/jus/cli.js build docs-src docs",
-    "docs": "npm run build && node_modules/jus/cli.js serve docs-src",
+    "test": "jest",
+    "builddocs": "jus build docs-src docs",
+    "docs": "jus serve docs-src",
     "prepare": "npm run build && npm run builddocs",
     "prepublish": "npm run build"
   },
