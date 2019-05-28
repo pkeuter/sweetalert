@@ -10,7 +10,6 @@
     "test": "jest",
     "builddocs": "jus build docs-src docs",
     "docs": "jus serve docs-src",
-    "prepare": "npm run build && npm run builddocs",
     "prepublishOnly": "npm run build"
   },
   "repository": {
